@@ -9,3 +9,9 @@ rightAngleButton.addEventListener('click',function(){
 leftAngleButton.addEventListener('click',function(){
     cards.scrollLeft -= 100;
 });
+
+const homeButton = document.getElementById('home');
+
+homeButton.addEventListener('click',function(){
+
+});
