@@ -10,7 +10,7 @@ body {
   background-color: #ffffff;
   letter-spacing: 0.6px;
   overflow-x: hidden;
-  padding-top: 70px;
+  padding-top: 150px;
 }
 html {
   overflow-x: hidden;
@@ -18,14 +18,20 @@ html {
 /*===Navbar toggler===*/
 .nt {
   top: 10px;
-  right: 0;
+  right: 1%;
 }
 
 /*===Section home===*/
 .section-home {
   height: auto;
   scroll-behavior: smooth;
-  min-height: 100vh;
+  min-height: 75vh;
+}
+.cont {
+  width: 100%;
+  max-height: 90%;
+  margin-left: 13%;
+  padding-right: 10%;
 }
 .btns {
   border-radius: 5px;
@@ -38,11 +44,14 @@ html {
   color: white;
 }
 .find {
-  position: relative;
+  margin-top: 4%;
   width: 100%;
-  padding-left: 6%;
 }
-.img {
+.stud img {
+  min-width: 50%;
+  max-width: 60%;
+}
+.stud {
   width: 100%;
 }
 .yellow-round {
@@ -60,9 +69,7 @@ html {
 }
 
 /*====Section How it Works====*/
-.cont {
-  height: 100%;
-}
+
 .text1 {
   font-size: 40px;
   font-weight: 600;
@@ -89,7 +96,6 @@ html {
 }
 .section-how {
   min-height: 100vh;
-  margin-top: 70px;
   width: auto;
   padding-top: 50px;
 }
@@ -260,20 +266,21 @@ footer {
 }
 
 /*====Media Queries====*/
-@media screen and (min-width: 1320px) {
-  .section-home {
-    padding-left: 12% !important;
-    padding-right: 12% !important;
-    min-height: 60vh;
+@media all and (min-width: 760px) and (max-width: 1100px) {
+  .cont {
+    margin-left: 6%;
+    padding-right: 10%;
+  }
+  .stud img {
+    margin-top: 17%;
+    margin-left: 15%;
+    max-width: 80%;
   }
 }
 @media all and (max-width: 1060px) {
   .details {
     margin-left: 55%;
     transform: translateX(-50%);
-  }
-  .section-home {
-    min-height: 40vh;
   }
   .section-how {
     min-height: 70vh;
@@ -295,12 +302,8 @@ footer {
   .body {
     overflow: hidden;
   }
-
   .ml-40 {
     margin: 0 !important;
-  }
-  .section-home {
-    min-height: 40vh;
   }
   .section-how {
     margin-top: 80px;
@@ -325,21 +328,33 @@ footer {
   .details .row .col {
     margin-top: 15px !important ;
   }
+  .section-home {
+    margin-top: -70px;
+    min-height: 72vh !important;
+  }
+  .find {
+    text-align: center !important;
+  }
   .cont {
     text-align: center;
+    margin: 0;
+    padding: 0;
     flex-direction: column;
   }
-  .img {
+  .stud img {
     margin-top: 30px !important;
-    width: 50vw;
+    max-width: 55vw !important;
   }
   .find .text1 {
+    text-align: center;
     font-size: 38px !important;
   }
   .find .text2 {
+    text-align: center;
     font-size: 40px !important;
   }
   .find .text3 {
+    text-align: center;
     font-size: larger;
   }
   .hear {
@@ -358,16 +373,17 @@ footer {
     flex-direction: column;
   }
 }
-@media all and (min-width: 936px) {
+@media all and (min-height: 1024px) {
   .section-home {
-    margin-top: 50px;
-    padding-left: 35px;
-    padding-right: 70px;
+    min-height: 84vh;
   }
 }
 @media all and (max-width: 368px) {
   .details {
     white-space: pre-wrap !important;
+  }
+  .details .row .col {
+    margin-bottom: -45px !important;
   }
 }
 @media all and (max-width: 500px) {
